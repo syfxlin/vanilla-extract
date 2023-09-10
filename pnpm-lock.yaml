@@ -288,13 +288,15 @@ importers:
 
   packages/next-plugin:
     specifiers:
+      '@vanilla-extract/integration': ^6.0.0
       '@vanilla-extract/webpack-plugin': ^2.3.0
-      browserslist: ^4.19.1
+      loader-utils: ^2.0.0
       next: 12.3.4
       webpack: ^5.36.1
     dependencies:
+      '@vanilla-extract/integration': link:../integration
       '@vanilla-extract/webpack-plugin': link:../webpack-plugin
-      browserslist: 4.21.4
+      loader-utils: 2.0.2
     devDependencies:
       next: 12.3.4
       webpack: 5.64.2
@@ -7451,7 +7453,7 @@ packages:
       loader-utils: 1.4.0
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.64.2_webpack-cli@4.9.1
+      webpack: 5.64.2_esbuild@0.17.6
 
   /babel-loader/8.2.3_webpack@5.64.2:
     resolution: {integrity: sha512-n4Zeta8NC3QAsuyiizu0GkmRcQ6clkV9WFUnUf1iXP//IeSKbWjofW3UHyZVwlOB4y039YQKefawyTn64Zwbuw==}
@@ -18279,7 +18281,6 @@ packages:
       webpack: 5.64.2_esbuild@0.17.6
     transitivePeerDependencies:
       - acorn
-    dev: false
 
   /terser/5.10.0:
     resolution: {integrity: sha512-AMmF99DMfEDiRJfxfY5jj5wNH/bYO09cniSqhfoyxc8sFoYIgkJy86G04UoZU5VjlpnplVu0K6Tx6E9b5+DlHA==}
@@ -19729,7 +19730,6 @@ packages:
       - '@swc/core'
       - esbuild
       - uglify-js
-    dev: false
 
   /webpack/5.64.2_webpack-cli@4.9.1:
     resolution: {integrity: sha512-4KGc0+Ozi0aS3EaLNRvEppfZUer+CaORKqL6OBjDLZOPf9YfN8leagFzwe6/PoBdHFxc/utKArl8LMC0Ivtmdg==}

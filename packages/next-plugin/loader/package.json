@@ -1,0 +1,4 @@
+{
+  "main": "dist/vanilla-extract-next-plugin-loader.cjs.js",
+  "module": "dist/vanilla-extract-next-plugin-loader.esm.js"
+}
